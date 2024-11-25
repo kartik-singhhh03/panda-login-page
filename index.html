@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Panda Illustration -->
+    <div class="panda">
+      <div class="ears">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+      </div>
+      <div class="face">
+        <div class="eye left">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye right">
+          <div class="pupil"></div>
+        </div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+        <div class="hands">
+          <div class="hand left"></div>
+          <div class="hand right"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-form">
+      <h2>Login</h2>
+      <form>
+        <!-- Username Input -->
+        <input type="text" id="username" placeholder="Enter Username" required>
+        
+        <!-- Password Input -->
+        <input type="password" id="password" placeholder="Enter Password" required>
+        
+        <!-- Remember Me and Forgot Password -->
+        <div class="options">
+          <label>
+            <input type="checkbox"> Remember Me
+          </label>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+        
+        <!-- Login Button -->
+        <button type="submit">Login</button>
+        
+        <!-- Create Account Link -->
+        <p>Don’t have an account? <a href="#">Create one</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

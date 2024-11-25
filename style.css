@@ -1,0 +1,230 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Background Styling */
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #f7c802, #000);
+    overflow: hidden;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Panda Design */
+  .panda {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .ears {
+    position: relative;
+  }
+  
+  .ear {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .ear.left {
+    top: -25px;
+    left: 10px;
+  }
+  
+  .ear.right {
+    top: -25px;
+    right: 10px;
+  }
+  
+  .face {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .eye {
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+  }
+  
+  .eye.left {
+    left: 40px;
+  }
+  
+  .eye.right {
+    right: 40px;
+  }
+  
+  .pupil {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: blink 5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 90%, 100% {
+      transform: scaleY(1);
+    }
+    95% {
+      transform: scaleY(0.1);
+    }
+  }
+  
+  .nose {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mouth {
+    width: 80px;
+    height: 40px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    z-index: 2;
+  }
+  
+  .hand {
+    width: 60px;
+    height: 80px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    transition: all 0.5s ease;
+  }
+  
+  .hand.left {
+    left: 20px;
+  }
+  
+  .hand.right {
+    right: 20px;
+  }
+  
+  /* Login Form Styling */
+  .login-form {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  .login-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-form input {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    box-shadow: 0 0 10px rgba(247, 200, 2, 0.8);
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .options a {
+    color: #ffdf00;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .options a:hover {
+    color: #ffd700;
+  }
+  
+  .login-form button {
+    width: 270px;
+    padding: 12px;
+    background: #f7c802;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+  }
+  
+  .login-form p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-form p a {
+    color: #ffdf00;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .login-form p a:hover {
+    color: #ffd700;
+  }
+  
