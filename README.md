@@ -1,5 +1,7 @@
 # Panda Login Page Template
 
+click here for live preview https://kartik-singhhh03.github.io/panda-login-page/
+
 ## Overview
 This is a dynamic and interactive **login page template** featuring a cute panda sitting on the login form. The panda closes its eyes with its hands when the user types in the **username** and **password** fields, adding a fun and engaging touch to the user experience.
 
